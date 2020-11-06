@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap");
+
+body {
+    color: white;
+    height: 100vh;
+    overflow-x: hidden;
+}
+main {
+    background-color: #121212;
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: #fff;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128, 128, 128, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler:focus {
+    outline: none;
+}
+.card {
+    background-color: #121212 !important;
+}
+
+/* 
+//////////////////////////////////////////////////
+            CUSTOM FORM
+//////////////////////////////////////////////////
+*/
+#name,
+#email,
+#phone,
+#password,
+#password-confirm {
+    color: white !important;
+    border: 0;
+    background: none;
+    border: 2px solid #227dc7;
+    width: 75% !important;
+    transition: 0.25s;
+}
+
+#name:focus,
+#email:focus,
+#phone:focus,
+#password:focus,
+#password-confirm:focus {
+    width: 100% !important;
+}
+
+/* 
+//////////////////////////////////////////////////
+                CARD HEADER
+//////////////////////////////////////////////////
+*/
+.card-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* 
+//////////////////////////////////////////////////
+        CUSTOM BUTTON WITH FLUSH EFFECT
+//////////////////////////////////////////////////
+*/
+.flow-button {
+    display: block;
+    width: 175px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    color: #fff !important;
+    border: 2px solid #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+}
+
+.flow-button span {
+    position: relative;
+    z-index: 2;
+}
+
+.flow-button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0089ff;
+    transition: all 0.35s;
+}
+
+.flow-button:hover {
+    /* color: black !important; */
+    border: 2px solid #0089ff;
+    text-decoration: none;
+}
+
+.flow-button:hover:after {
+    width: 100%;
+}
+
+/* 
+//////////////////////////////////////////////////
+            HEADER
+//////////////////////////////////////////////////
+*/
+#header {
+    max-width: 100vw !important;
+}
+
+/* 
+//////////////////////////////////////////////////
+                FOOTER
+//////////////////////////////////////////////////
+*/
+#welcome-footer {
+    position: absolute;
+    bottom: 5%;
+    width: inherit;
+    right: 0%;
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+        position: absolute;
+        bottom: 0%;
+        width: inherit;
+        left: 0%;
+    }
+}
+
+/* 
+//////////////////////////////////////////////////
+            QUESTION LABEL
+//////////////////////////////////////////////////
+*/
+.question-label {
+    line-height: 1;
+}
+#level-label {
+    font-size: 3rem;
+    font-family: Londrina Outline;
+    display: inline-block;
+    width: 85%;
+}
+
+#forum-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+#forum-link:hover {
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    #level-label {
+        width: 75%;
+    }
+}
+/* 
+//////////////////////////////////////////////////
+            INPUT AREA IN QUESTION PAGE
+//////////////////////////////////////////////////
+*/
+#input-answer {
+    border-style: none;
+    height: 80px;
+    font-size: 40px !important;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 5%;
+}
+@media screen and (max-width: 768px) {
+    #input-answer {
+        font-size: 25px !important;
+    }
+}
+@keyframes translateInputBorder {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.input-border {
+    position: relative;
+    display: block;
+    background: white;
+    height: 2px;
+    width: 100%;
+    animation-name: translateInputBorder;
+    animation-duration: 2s;
+}
+.border-mobile {
+    display: none;
+}
+#input-box {
+    overflow: hidden;
+}
+
+/* 
+//////////////////////////////////////////////////
+        CHECK BUTTON IN QUESTION AREA
+//////////////////////////////////////////////////
+*/
+#check-button {
+    display: flex;
+    justify-content: right;
+    padding-right: 0%;
+}
+
+/* 
+//////////////////////////////////////////////////
+                    NAV BAR
+//////////////////////////////////////////////////
+*/
+.nav-link {
+    opacity: 0.3;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+/* 
+//////////////////////////////////////////////////
+            MOBILE VIEW FOR QUESTION PAGE
+//////////////////////////////////////////////////
+*/
+
+@media only screen and (max-width: 575px) {
+    .border-mobile {
+        display: block;
+    }
+
+    .border-desktop {
+        display: none;
+    }
+
+    #check-button {
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .flow-button {
+        position: relative !important;
+        margin-top: 5%;
+    }
+    .typewriter h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* 
+//////////////////////////////////////////////////
+            USERS TABLE FOR ADMIN PAGE
+//////////////////////////////////////////////////
+*/
+.table {
+    color: #fff;
+}
+
+/* 
+//////////////////////////////////////////////////
+        TYPEWRITER EFFECT FOR MESSAGES
+//////////////////////////////////////////////////
+*/
+.typewriter h2 {
+    color: #fff;
+    font-family: inherit;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* border-right: 0.15em solid white; The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+    -webkit-animation: typing 2s steps(30, end),
+        blink-caret 0.5s step-end infinite;
+    -moz-animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+    -o-animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+    animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+/* 
+//////////////////////////////////////////////////
+                LEVEL UP PAGE
+//////////////////////////////////////////////////
+*/
+
+/*****************LOADER************************/
+.circle-loader {
+    margin-bottom: 3.5em;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-left-color: #fff;
+    /* animation-name: loader-spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; */
+    animation: loader-spin 1.2s infinite linear;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+    top: 50%;
+    left: 38%;
+}
+
+.load-complete {
+    -webkit-animation: none;
+    animation: none;
+    border-color: #fff;
+    transition: border 500ms ease-out;
+}
+
+.checkmark {
+    display: none;
+}
+.checkmark.draw:after {
+    animation-duration: 800ms;
+    animation-timing-function: ease;
+    animation-name: checkmark;
+    transform: scaleX(-1) rotate(135deg);
+}
+.checkmark:after {
+    opacity: 1;
+    height: 3.5em;
+    width: 1.75em;
+    transform-origin: left top;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+    content: "";
+    left: 1.75em;
+    top: 3.5em;
+    position: absolute;
+}
+
+@keyframes loader-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+    20% {
+        height: 0;
+        width: 1.75em;
+        opacity: 1;
+    }
+    40% {
+        height: 3.5em;
+        width: 1.75em;
+        opacity: 1;
+    }
+    100% {
+        height: 3.5em;
+        width: 1.75em;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .circle-loader {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .checkmark:after {
+        height: 3rem;
+        width: 1.5rem;
+        left: 1rem;
+        top: 2.5rem;
+    }
+}
+
+/*************OVERLAY****************************/
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #121212;
+    opacity: 0.7;
+    height: 100%;
+    transform: translateX(0%);
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+.slideadd {
+    width: 100%;
+}
+
+/* LEVEL UP BUTTON */
+#levelup_form {
+    display: flex;
+    justify-content: center;
+}
+
+/* 
+//////////////////////////////////////////////////
+                LEADERBOARD 
+//////////////////////////////////////////////////
+*/
+#leaderboard-container {
+    position: relative;
+    top: -1%;
+}
+#leaderboard-image-container {
+    position: relative;
+    height: 10vw;
+    /* background: wheat; */
+}
+
+#leaderboard-icon {
+    position: absolute;
+    top: -3vw;
+    width: 108%;
+    right: -4%;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+.tbl-header {
+    border-bottom: 2px solid #121212;
+    line-height: 1;
+    background-color: #ededed;
+}
+
+.tbl-top {
+    background-color: #fff;
+}
+
+.tbl-content {
+    height: 40vh;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-top: 0px;
+    border-bottom: 1px solid #fff;
+    line-height: 1;
+}
+.tbl-content::-webkit-scrollbar {
+    display: none;
+}
+th {
+    padding: 0.9rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #121212;
+    text-transform: uppercase;
+}
+td {
+    padding: 0.9rem;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #fff;
+    border-bottom: solid 1px #fff;
+}
+
+.leaderboard-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#overall-leaderboard {
+    width: 260px;
+}
+/* 
+//////////////////////////////////////////////////
+        RESPONSIVE VIEW FOR LEADERBOARD TABLE
+//////////////////////////////////////////////////
+*/
+@media only screen and (max-width: 410px) {
+    #table-container {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    #table-container {
+        height: 60vh;
+    }
+}
+/* 
+//////////////////////////////////////////////////
+        RESPONSIVE VIEW FOR LEADERBOARD TEXT
+//////////////////////////////////////////////////
+*/
+@media only screen and (max-width: 775px) {
+    #table-container {
+        text-align: center;
+        font-size: 1em;
+        position: relative;
+        top: 1.5rem;
+    }
+    .tbl-top {
+        margin-top: 1.2rem;
+    }
+
+    td,
+    th {
+        font-size: 1rem;
+    }
+
+    .tbl-content {
+        height: 48vh;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+    #table-container {
+        top: 1.5rem;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #table-container {
+        text-align: center;
+        font-size: 1em;
+        position: relative;
+        top: 1rem;
+    }
+
+    td,
+    th {
+        font-size: 0.8rem;
+    }
+    .tbl-content {
+        height: 60vh;
+    }
+}

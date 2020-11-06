@@ -1,0 +1,240 @@
+/*****Experimental*****/
+
+/**********************/
+
+body {
+    background-color: #121212;
+    color: #fffeee;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+
+/*****Width*******/
+.rules-container {
+    width: 75vw;
+}
+
+/*******Carousel*******/
+
+.carousel-item {
+    margin-bottom: 36px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 16px;
+}
+
+.carousel-inner {
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-inner {
+        height: 90vh;
+    }
+}
+
+.carousel-indicators li.active {
+    transform: translateY(-2.5px);
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-control-prev-icon {
+    transform: translateX(-100px);
+}
+
+.carousel-control-next-icon {
+    transform: translateX(100px);
+}
+
+/********Text Formatting******/
+.head {
+    text-align: center;
+    font-size: 64px;
+    font-family: "Open Sans";
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.rules-head {
+    font-size: 24px;
+    font-family: "Open Sans";
+}
+li {
+    font-size: 16px;
+    font-family: "Open Sans";
+}
+
+.date {
+    margin-bottom: 0;
+}
+
+.logo {
+    width: 250px;
+    object-fit: cover;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.date-container {
+    border: 2px solid white;
+    text-align: center;
+    padding: 18px;
+}
+
+/********Timer**********/
+.timer {
+    color: #fffeee;
+    font-size: 32px;
+    display: inline;
+}
+
+.timer-div {
+    display: inline-block;
+    width: 70%;
+    text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+    .timer-div {
+        width: 60%;
+    }
+}
+
+#clock-icon {
+    font-size: 32px;
+    color: #fffeee;
+    border: none;
+    opacity: 1;
+    margin-right: 12px;
+}
+
+#clock-icon:hover {
+    border: none;
+    opacity: 1;
+    color: #fffeee;
+    font-size: 32px;
+    transform: scale(1);
+}
+
+/**********Footer**********/
+#footer {
+    margin-top: -64px;
+    margin-bottom: 5vh;
+}
+
+.media-icons {
+    padding-top: 10vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .timer-div {
+        padding-top: 3vh;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .timer-div {
+        margin: 0;
+        text-align: center;
+        margin-top: -7vh;
+    }
+
+    #clock-icon {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .media-icons {
+        padding-top: 0;
+    }
+
+    .timer-div-encloser {
+        padding: 0;
+        margin-top: 16px;
+    }
+
+    #clock-icon {
+        font-size: 20px;
+    }
+
+    .live-time {
+        font-size: 20px;
+    }
+
+    #footer .fa {
+        height: 36px;
+        width: 36px;
+        font-size: 24px;
+    }
+
+    .flow-button {
+        height: 48px;
+    }
+
+    #check-button a {
+        padding-top: 4px;
+        margin-bottom: 16px;
+    }
+}
+
+#footer .col-md-12 {
+    text-align: center;
+}
+
+@media screen and (max-width: 675px) {
+    .logo {
+        width: 200px;
+        object-fit: cover;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .rules-container {
+        width: 90vw;
+    }
+
+    .head {
+        font-size: 36px;
+    }
+
+    .rules-head {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    ul {
+        transform: translateX(-12px);
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .carousel-item {
+        margin-bottom: 48px;
+    }
+
+    .carousel-control-prev-icon {
+        transform: translateX(-175%);
+    }
+
+    .carousel-control-next-icon {
+        transform: translateX(175%);
+    }
+
+    #footer {
+        margin-top: 16px;
+    }
+}

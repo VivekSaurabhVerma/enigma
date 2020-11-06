@@ -1,0 +1,310 @@
+/*******Experimental*****/
+/**************************/
+
+/****App Layout******/
+.logo {
+    width: 250px;
+    object-fit: cover;
+    margin-top: 24px;
+}
+
+.nav-link {
+    font-size: 24px;
+}
+
+/*******Submit Form*******/
+.container-form {
+    width: 65vw;
+    margin: auto;
+}
+
+.flow-button {
+    height: 64px;
+}
+
+/* #check-button span {
+    margin: 0;
+    font-size: 24px;
+} */
+
+/* #check-button a {
+    padding-top: 10px;
+    margin-bottom: 16px;
+} */
+
+/*******Question*********/
+
+.question-no {
+    font-family: "Londrina Outline";
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.level {
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+
+.hints-head {
+    padding-top: 28px;
+    text-align: right;
+}
+
+.card-img-top {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.forums-link {
+    transition: opacity 0.5s ease;
+    color: #fffeee;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 675px) {
+    .forums-link:hover {
+        transition: opacity 0.5s ease;
+        color: #fffeee;
+        text-decoration: none;
+        opacity: 1;
+    }
+}
+
+/********Timer**********/
+.timer {
+    color: #fffeee;
+    font-size: 32px;
+    display: inline;
+}
+
+.timer-div {
+    position: relative;
+    bottom: 15%;
+    display: inline-block;
+    /* width: 70%; */
+    text-align: right;
+}
+
+@media screen and (min-width: 1200px) {
+    .timer-div {
+        left: 20%;
+    }
+}
+
+#clock-icon {
+    font-size: 32px;
+    color: #fffeee;
+    border: none;
+    opacity: 1;
+    margin-right: 12px;
+}
+
+#clock-icon:hover {
+    border: none;
+    opacity: 1;
+    color: #fffeee;
+    font-size: 32px;
+    transform: scale(1);
+}
+
+/*********Form*************/
+.input-box {
+    color: #fffeee;
+    background-color: #121212;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    border-bottom: 1px solid #fffeee;
+}
+
+.input-btn {
+    border-color: #fffeee;
+    background-color: #121212;
+    color: #fffeee;
+    border-radius: 0;
+    width: 100%;
+}
+
+.input-btn a {
+    color: #fffeee;
+}
+
+.input-btn a:hover {
+    color: #fffeee;
+    text-decoration: none;
+}
+
+.btn-div {
+    padding: 0;
+}
+
+.form-inputs {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.input-btn:hover {
+    background-color: transparent;
+}
+
+.input-btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #007bff;
+    transform-origin: left;
+    transition: width 0.25s ease;
+    z-index: -1;
+}
+
+.input-btn:hover::after {
+    transition: 0.5s ease;
+    width: 100%;
+}
+
+/**********Footer**********/
+#footer {
+    margin-top: -10vh;
+    position: absolute;
+    bottom: 5%;
+}
+
+@media screen and (max-width: 576px) {
+    #footer {
+        bottom: 0%;
+    }
+}
+
+.footer-icons {
+    display: flex;
+}
+.icon-footer {
+    margin: auto 3% !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .timer-div {
+        padding-top: 3vh;
+    }
+    .footer-icons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .timer-div {
+        margin: 0;
+        text-align: center;
+        margin-top: -3%;
+    }
+
+    #clock-icon {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .media-icons {
+        padding-top: 0;
+    }
+
+    .timer-div-encloser {
+        padding: 0;
+        margin-top: 32px;
+    }
+
+    #clock-icon {
+        font-size: 20px;
+    }
+
+    .live-time {
+        font-size: 20px;
+    }
+
+    #footer .fa {
+        height: 36px;
+        width: 36px;
+        font-size: 24px;
+    }
+
+    /* .flow-button {
+        height: 48px;
+    } */
+
+    /* #check-button a {
+        padding-top: 4px;
+        margin-bottom: 16px;
+    } */
+}
+
+#footer .col-md-12 {
+    text-align: center;
+}
+
+/********Responsive************/
+
+@media screen and (max-width: 675px) {
+    #footer {
+        margin-top: 36px;
+    }
+
+    .timer-div {
+        text-align: center;
+    }
+
+    #clock-icon {
+        margin-right: 0;
+    }
+
+    .input-div {
+        margin-top: 20px;
+    }
+
+    .btn-div {
+        margin-top: 32px;
+    }
+
+    .input-btn {
+        width: 100%;
+    }
+
+    .logo {
+        width: 175px;
+        object-fit: cover;
+        margin-top: 0;
+    }
+
+    .forums-link {
+        font-size: 18px;
+    }
+
+    .forums-link:hover {
+        text-decoration: none;
+        color: #fffeee;
+    }
+
+    .question-main {
+        margin-top: 36px;
+    }
+
+    .nav-link {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 992px) and (min-height: 700px) {
+    .correct-answer-body {
+        overflow: hidden !important;
+        height: 77.5vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .question-main {
+        max-width: 65vw;
+    }
+}

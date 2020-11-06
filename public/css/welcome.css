@@ -1,0 +1,396 @@
+body {
+    background-color: #121212;
+    color: #fffeee;
+    font-family: "Open Sans";
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+}
+
+.logo {
+    width: 250px;
+    object-fit: cover;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 675px) {
+    .logo {
+        width: 200px;
+        object-fit: cover;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.background-img {
+    position: absolute;
+}
+
+.background-img img {
+    width: 50vw;
+    height: 85vh;
+    z-index: -10;
+    position: absolute;
+    left: 25vw;
+    right: 25vw;
+    top: -20vh;
+}
+
+@media screen and (max-width: 675px) {
+    .background-img img {
+        width: 50vw;
+        height: 50vh !important;
+        left: 20vw !important;
+        right: 20vw !important;
+        top: -15vh !important;
+    }
+}
+
+.head {
+    font-size: 150px;
+    font-weight: 700;
+}
+
+.sub-head {
+    transition: opacity 0.5s ease;
+    margin-top: -5vh;
+    font-size: 16px;
+    opacity: 0;
+}
+
+@media screen and (max-width: 675px) {
+    .head {
+        font-size: 64px;
+    }
+
+    .sub-head {
+        margin-top: -16px;
+        font-size: 16px;
+        opacity: 1;
+    }
+}
+
+.sub-headHoverClass {
+    transition: 1s ease;
+    opacity: 1;
+}
+
+.main-text {
+    margin-top: 10vh;
+}
+
+@media screen and (max-width: 675px) {
+    .main-text {
+        margin-top: 25vh;
+    }
+}
+
+.main-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #fffeee;
+    border-color: #fffeee;
+    border-radius: 0;
+    width: 100%;
+    height: 9vh;
+    font-size: 24px;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 100;
+}
+
+.ml-button {
+    margin-left: 7.5vw;
+}
+
+.mr-button {
+    margin-right: 7.5vw;
+}
+
+@media screen and (min-width: 675px) and (max-width: 992px) {
+    .main-button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .main-button {
+        height: 56px;
+        font-size: 16px;
+        display: inline;
+    }
+    .main-button:hover {
+        display: inline-block;
+        background-color: transparent;
+        color: #fffeee;
+        border-color: #fffeee;
+        border-radius: 0;
+        width: 100%;
+        height: 56px;
+        font-size: 16px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 675px) {
+    .main-button:hover {
+        background-color: transparent !important;
+        border-color: #007bff;
+    }
+
+    .main-button::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #007bff;
+        transform-origin: left;
+        transition: width 0.25s ease;
+        z-index: -1;
+    }
+
+    .main-button:hover::after {
+        transition: 0.5s ease 0.25s;
+        width: 100%;
+    }
+}
+
+.btn-margin {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+@media screen and (max-width: 675px) {
+    .btn-margin {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+.buttons {
+    margin-top: 20vh;
+}
+
+.suit {
+    position: absolute;
+    transform: translate3d(-50%, 0%, 0);
+    height: 40vh;
+    width: 80vw;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.hat {
+    position: absolute;
+    z-index: 0;
+    transition: transform 0.5s;
+    transform: translate3d(-50%, -55%, 0);
+    height: 50vh;
+    object-fit: cover;
+}
+
+.cape-front {
+    position: absolute;
+    z-index: 0;
+    transition: transform 0.5s;
+    transform: translate3d(-50%, -45%, 0);
+    height: 45vh;
+    object-fit: cover;
+}
+
+.cape-back {
+    position: absolute;
+    z-index: -2;
+    transition: transform 0.5s;
+    transform: translate3d(-50%, -65%, 0);
+    height: 45vh;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 675px) {
+    .hat {
+        height: 30vh;
+        transform: translate3d(-50%, -70%, 0);
+    }
+
+    .cape-front,
+    .cape-back {
+        height: 25vh;
+    }
+
+    .cape-front {
+        transform: translate3d(-50%, -25%, 0);
+    }
+
+    .cape-back {
+        transform: translate3d(-50%, -45%, 0);
+    }
+}
+
+.hatHoverClass {
+    transition: 0.5s;
+    transform: translate3d(-50%, -65%, 0);
+}
+
+.cape-frontHoverClass {
+    transition: 0.5s;
+    transform: translate3d(-50%, -15%, 0);
+}
+
+.cape-backHoverClass {
+    transition: 0.5s;
+    transform: translate3d(-50%, -35%, 0);
+}
+
+/*******Mobile Navbar********/
+#mobile-navbar {
+    margin-top: 8px;
+    margin-bottom: -48px;
+}
+.greyish a,
+.greyish a:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+.nav-fill {
+    border-bottom-color: #121212;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    padding: 8px 4px;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #121212;
+    color: #fffeee;
+}
+
+.nav-pills {
+    border-bottom: 1px solid #121212;
+}
+
+.mobile-encloser .rules-head {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.mobile-encloser .rules-container li {
+    font-size: 16px;
+}
+
+.mobile-encloser .rules-container ul {
+    margin-bottom: 32px;
+}
+
+.mobile-encloser .contact-us-container .contact-col {
+    margin-bottom: 24px;
+}
+
+.mobile-encloser .contact-us-container .row {
+    margin-bottom: 0px;
+}
+
+.mobile-encloser .contact-us-container .contact-col:last-child {
+    margin-bottom: -4px;
+}
+
+.mobile-encloser .contact-us-container,
+.mobile-encloser .rules-container,
+.mobile-encloser .prizes-container,
+.mobile-encloser .faq-container {
+    margin-top: 64px;
+}
+
+.mobile-encloser .faq-container .question {
+    font-size: 20px;
+}
+
+.mobile-encloser .faq-container .answer {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.mobile-encloser .faq-container .answer:last-child {
+    margin-bottom: 16px;
+}
+
+.mobile-encloser .prizes {
+    margin-top: 72px;
+    margin-bottom: -32px;
+}
+
+.mobile-encloser #mobile-navbar {
+    width: 100%;
+}
+
+@media screen and (min-width: 675px) and (max-width: 992px) {
+    .mobile-encloser #mobile-navbar {
+        width: 80%;
+    }
+}
+
+/*******Final touch changes*****/
+button:focus,
+input:focus,
+button:active {
+    outline: none;
+}
+
+#date-container {
+    border: 2px solid #121212;
+    padding: 18px;
+    text-align: center;
+}
+
+/* 
+//////////////////////////////////////////////////
+                NOTIFICATION
+//////////////////////////////////////////////////
+*/
+.notification {
+    font-size: 25px;
+    font-weight: 400;
+    animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@media only screen and (max-width: 772px) {
+    .notification {
+        margin-bottom: 5%;
+        text-align: center;
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .notification {
+        position: absolute;
+        right: 2%;
+    }
+}

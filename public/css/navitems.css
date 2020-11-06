@@ -1,0 +1,280 @@
+.prizes-container,
+.contact-us-container,
+.rules-container,
+.faq-container {
+    margin-top: 32px;
+    width: 55vw;
+}
+
+/***********RULES**************/
+.rules-head {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rules-container li {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*********Conatct***********/
+.contact-col p {
+    margin: -3px;
+}
+
+.contact-col {
+    margin-bottom: 5vh;
+}
+
+.contact-name {
+    color: #121212;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contact-designation,
+.contact-email,
+.contact-contact {
+    color: #121212;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contact-col:nth-child(even) {
+    text-align: right;
+}
+
+/***********FAQs*********/
+
+.question {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.answer {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 5vh;
+}
+.carousel-indicators {
+    transform: translateY(50px);
+}
+
+.carousel-indicators li {
+    margin: auto 8px;
+    width: 10px;
+    height: 10px;
+    background-color: #121212;
+    border-radius: 100%;
+    opacity: 0.4;
+}
+
+.carousel-indicators li.active {
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-inner {
+    height: 65vh;
+}
+@media screen and (min-width: 991.98px) and (max-width: 1120px) {
+    .carousel-inner {
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-height: 702px) {
+    .carousel-inner {
+        overflow-y:ort;
+    }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+}
+
+.carousel-control-next-icon {
+    transform: translateX(100px);
+}
+.carousel-control-prev-icon {
+    transform: translateX(-100px);
+}
+
+.carousel-control-next-icon:after {
+    content: ">";
+    font-size: 50px;
+    color: #121212;
+}
+
+.carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 50px;
+    color: #121212;
+}
+
+/******Prizes*******/
+
+.prize-img {
+    transition: 0.25s ease-in;
+    width: 80%;
+    object-fit: cover;
+    border: 1px solid #121212;
+    margin: 0 !important;
+}
+
+.label {
+    color: #121212;
+    font-weight: bold;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.img-div {
+    text-align: center;
+    padding: 0 !important;
+}
+.label {
+    margin-bottom: 5vh;
+}
+
+/*@media screen and (min-width: 992px) {
+    .prize-img:hover {
+        transform: scale(1.1);
+        transition: 0.25s ease-out;
+    }
+
+    .label {
+        margin-top: 8px;
+    }
+}
+*/
+/******Footer*******/
+
+.footer-container {
+    position: absolute;
+    bottom: 3%;
+    left: 0%;
+    margin-bottom: 2%;
+}
+@media screen and (max-width: 992px) {
+    .footer-container {
+        position: inherit;
+    }
+}
+.social-media-icon-footer {
+    display: inline-block;
+    margin: auto 1%;
+    text-align: center;
+}
+
+.social-media-icon-footer .fa {
+    color: #121212;
+    font-size: 32px;
+    width: 48px;
+    height: 48px;
+    padding-top: 15%;
+    border: 0.5px solid #121212;
+    opacity: 1;
+}
+
+@media screen and (min-width: 675px) {
+    .social-media-icon-footer .fa:hover {
+        text-decoration: none;
+        color: #121212;
+        opacity: 0.5;
+        transform: scale(1.15);
+        transition: 0.5s ease;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .social-media-icon-footer {
+        margin: auto 3% !important;
+    }
+}
+
+/*****Responsive Design********/
+@media screen and (max-width: 675px) {
+    .rules-head {
+        font-size: 16px;
+    }
+
+    .rules-container li {
+        font-size: 14px;
+    }
+
+    .date {
+        margin-bottom: 10px;
+    }
+
+    .contact-name {
+        font-size: 20px;
+    }
+
+    .contact-designation,
+    .contact-email,
+    .contact-contact {
+        font-size: 18px;
+    }
+
+    .contact-col {
+        text-align: center !important;
+        margin-bottom: 10vh;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+
+    .carousel-control-next-icon {
+        transform: translateX(75%);
+    }
+    .carousel-control-prev-icon {
+        transform: translateX(-75%);
+    }
+
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+    }
+
+    .footer-container {
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .prizes-container,
+    .contact-us-container,
+    .rules-container,
+    .faq-container {
+        margin-top: 10vh;
+        width: 90vw;
+    }
+}
+
+/**********Final touch changes**********/
+#collapsibleNavbar {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 675px) {
+    .prize-img {
+        width: 60%;
+    }
+}

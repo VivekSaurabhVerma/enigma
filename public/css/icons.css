@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 5vh;
+}
+
+@media screen and (max-width: 675px) {
+    .footer {
+        margin-top: 64px;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .social-media-icon {
+        margin: auto 3% !important;
+    }
+}
+
+.social-media-icon {
+    display: inline-block;
+    margin: auto 1%;
+    text-align: center;
+}
+
+.fa {
+    transition: 0.5s ease-out;
+    color: #fffeee;
+    font-size: 32px;
+    width: 48px;
+    height: 48px;
+    padding-top: 15%;
+    border: 0.5px solid #fffeee;
+    opacity: 0.5;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: #fffeee;
+}
+
+@media screen and (min-width: 675px) {
+    .fa:hover {
+        text-decoration: none;
+        color: #fffeee;
+        opacity: 1;
+        transform: scale(1.15);
+        transition: 0.5s ease;
+    }
+}
