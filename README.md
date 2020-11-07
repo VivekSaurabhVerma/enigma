@@ -1,6 +1,6 @@
 # enigma
 An online crypt hunt built on Laravel integrated with AWS S3 Storage and AWS SES
-
+<p align="center"><a href="https://enigma.techfest.org">Visit Website</a>
 <p align="center"><img src="https://laravel.com/img/logomark.min.svg" width="400"></p>
 
 <p align="center">
